@@ -12,6 +12,7 @@
         <activity android:name=".MemoActivity"></activity>
         <activity android:name=".AlarmActivity" />
         <activity android:name=".StopwatchActivity" />
+        <activity android:name=".SplashActivity">
         <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
