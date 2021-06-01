@@ -3,15 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".MemoActivity">
+    android:layout_height="match_parent"
+    tools:context=".MemoEditActivity">
 
-    <ListView
-        android:id="@+id/listView"
+    <EditText
+        android:id="@+id/memo_edit"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#BFBFBF"
-        android:scrollbars="vertical"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
