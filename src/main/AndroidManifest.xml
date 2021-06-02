@@ -9,17 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SnapWatch">
-        <activity android:name=".MemoActivity"></activity>
+        <activity android:name=".MemoEditActivity"></activity>
+        <activity android:name=".MemoActivity" />
         <activity android:name=".AlarmActivity" />
         <activity android:name=".StopwatchActivity" />
         <activity android:name=".SplashActivity">
-        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".HomeActivity"></activity>
+        <receiver android:name=".AlarmReceiver"
+            android:process=":remote"/>
     </application>
 
 </manifest>

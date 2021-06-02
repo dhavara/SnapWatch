@@ -23,11 +23,12 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        getSupportActionBar().hide();
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN); // utk menghilangkan bar diatas
         setContentView(R.layout.activity_splash);
 
-        //ANimation
+        //Animation
         topAnim = AnimationUtils.loadAnimation (this,R.anim.top_anim);
         botAnim = AnimationUtils.loadAnimation (this,R.anim.buttom_anim);
 
