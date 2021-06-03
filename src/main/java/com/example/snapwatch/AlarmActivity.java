@@ -30,8 +30,8 @@ final static int RQS_1=1;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm);
-        textAlarm = (TextView)findViewById(R.id.txt_alarm);
-        SetAlarm = (Button)findViewById(R.id.btn_SetAlarm);
+        textAlarm = findViewById(R.id.txt_alarm);
+        SetAlarm = findViewById(R.id.btn_SetAlarm);
 
         SetAlarm.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,7 +67,7 @@ final static int RQS_1=1;
         }
     };
     private void SetAlarm(Calendar targetCal){
-        textAlarm.setText("Set Alarm : "+ targetCal.getTime());
+        textAlarm.setText("Alarm Set for "+ targetCal.getTime());
         Intent intent = new Intent(getBaseContext(), AlarmReceiver.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(getBaseContext(),RQS_1,intent,0);
         AlarmManager alarmManager = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
