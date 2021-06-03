@@ -43,9 +43,9 @@
 
     <android.widget.Button
         android:id="@+id/button_stopwatch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/button"
         android:text="Stopwatch"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,24 +54,24 @@
 
     <android.widget.Button
         android:id="@+id/button_alarm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/button"
         android:text="Alarm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/Time" />
+        app:layout_constraintTop_toBottomOf="@+id/button_stopwatch" />
 
     <android.widget.Button
         android:id="@+id/button_memo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/button"
         android:text="Memo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Time" />
+        app:layout_constraintTop_toBottomOf="@+id/button_alarm" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

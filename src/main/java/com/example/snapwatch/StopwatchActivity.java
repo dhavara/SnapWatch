@@ -77,6 +77,10 @@ public class StopwatchActivity extends AppCompatActivity {
         handler.post(new Runnable() {
             @Override
             public void run() {
+                if (running) {
+                    seconds++;
+                }
+
                 hours = seconds / 3600;
                 minute = (seconds / 3600) / 60;
                 secs = seconds % 60;
@@ -84,10 +88,8 @@ public class StopwatchActivity extends AppCompatActivity {
                 time = String.format(Locale.getDefault(), "%d:%02d:%02d", hours, minute, secs);
                 timeView.setText(time);
 
-                if (running) {
-                    seconds++;
-                }
                 handler.postDelayed(this, 1000);
+
             }
         });
     }
