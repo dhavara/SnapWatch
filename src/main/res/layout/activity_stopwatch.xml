@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context=".StopwatchActivity">
 
     <TextView
@@ -24,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="216dp"
-        android:backgroundTint="@color/dark_gray"
+        android:backgroundTint="@color/gray"
         android:clickable="true"
         android:onClick="onReset"
         android:src="@drawable/ic_reset"
@@ -37,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginTop="216dp"
-        android:backgroundTint="@color/dark_gray"
+        android:backgroundTint="@color/gray"
         android:clickable="true"
         android:onClick="onStart"
         android:src="@drawable/ic_start"
@@ -50,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginTop="216dp"
-        android:backgroundTint="@color/dark_gray"
+        android:backgroundTint="@color/gray"
         android:clickable="true"
         android:onClick="onStop"
         android:src="@drawable/ic_stop"
